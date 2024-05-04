@@ -4,7 +4,6 @@
 // Any line starting with // is ignored                //
 // You MUST set the token and owner                    //
 // All other items have defaults if you don't set them //
-// Open in Notepad++ for best results                  //
 /////////////////////////////////////////////////////////
 
 
@@ -108,7 +107,7 @@ playlistsfolder = "Playlists"
 // By default, the bot will DM the owner if the bot is running and a new version of the bot
 // becomes available. Set this to false to disable this feature.
 
-updatealerts=true
+updatealerts=false
 
 
 // Changing this changes the lyrics provider
@@ -136,16 +135,16 @@ aliases {
   settings = [ status ]
 
   // Music commands
-  lyrics = []
+  lyrics = [ l ]
   nowplaying = [ np, current ]
-  play = []
+  play = [ p ]
   playlists = [ pls ]
   queue = [ list ]
   remove = [ delete ]
   scsearch = []
   search = [ ytsearch ]
   shuffle = []
-  skip = [ voteskip ]
+  skip = [ voteskip, s ]
 
   // Admin commands
   prefix = [ setprefix ]
@@ -155,7 +154,7 @@ aliases {
 
   // DJ Commands
   forceremove = [ forcedelete, modremove, moddelete ]
-  forceskip = [ modskip ]
+  forceskip = [ modskip, fs ]
   movetrack = [ move ]
   pause = []
   playnext = []
